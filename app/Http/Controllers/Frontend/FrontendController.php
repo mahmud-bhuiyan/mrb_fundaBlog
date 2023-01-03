@@ -2,20 +2,24 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use Illuminate\Http\Request;
+
 use App\Http\Controllers\Controller;
+
 use App\Models\Category;
 use App\Models\Post;
-use Illuminate\Http\Request;
+use App\Models\Settings;
 
 class FrontendController extends Controller
 {
     public function frontIndex()
     {
+        $setting = Settings::find(1);
         $all_categories = Category::where('status','1')->get();
 
         $latest_posts = Post::where('status', '1')->orderBy('created_at','DESC')->get()->take(10);
 
-        return view('frontend.frontIndex', compact('all_categories', 'latest_posts'));
+        return view('frontend.frontIndex', compact('setting','all_categories', 'latest_posts'));
     }
 
     public function viewCategoryPost($category_slug)

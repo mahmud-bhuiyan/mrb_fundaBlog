@@ -50,11 +50,11 @@
                             <caption class="text-center" style="font-size: 25px;">List of Categories</caption>
                             <thead class="table-info align-middle">
                                 <tr>
-                                    <th style="width: 5%;">SL</th>
-                                    <th style="width: 20%;">Category Name</th>
-                                    <th style="width: 10%;">Image</th>
-                                    <th style="width: 20%;">Status</th>
-                                    <th style="width: 20%;">Action</th>
+                                    <th style="width: 5%; text-align: center;">SL</th>
+                                    <th style="width: 20%; text-align: center;">Category Name</th>
+                                    <th style="width: 10%; text-align: center;">Image</th>
+                                    <th style="width: 20%; text-align: center;">Status</th>
+                                    <th style="width: 20%; text-align: center;">Action</th>
                                 </tr>
                             </thead>
                             <tbody class="table-group-divider" id="table">

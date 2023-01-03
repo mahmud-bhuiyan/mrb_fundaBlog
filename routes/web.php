@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Frontend\CommentsController;
 use App\Http\Controllers\Frontend\FrontendController;
@@ -63,5 +64,10 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
         Route::get('/', [UserController::class, 'userIndex']);
         Route::get('/edit/{user_id}', [UserController::class, 'userEdit']);
         Route::post('/update/{user_id}', [UserController::class, 'userUpdate']);
+    });
+
+    Route::prefix('settings')->group(function () {
+        Route::get('/', [SettingsController::class, 'settingsIndex']);
+        Route::post('/', [SettingsController::class, 'settingsCreate']);
     });
 });

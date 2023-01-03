@@ -1,8 +1,8 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'MRB@Blog')
-@section('meta_description', 'MRB@Blog')
-@section('meta_keyword', 'MRB@Blog')
+@section('title', "$setting->website_name")
+@section('meta_description', "$setting->meta_description")
+@section('meta_keyword', "$setting->meta_keyword")
 
 @section('content')
     <div class="py-3">

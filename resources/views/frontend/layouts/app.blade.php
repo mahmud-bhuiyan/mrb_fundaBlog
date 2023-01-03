@@ -14,6 +14,13 @@
     <meta name="keyword" content="@yield('meta_keyword')">
     <meta name="author" content="MRB">
 
+    @php
+        $setting = App\Models\Settings::find(1);
+    @endphp
+    @if ($setting)
+        <link rel="shortcut icon" href="{{ asset('uploads/settings/' . $setting->favicon) }}" type="images/x-icon">
+    @endif
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">

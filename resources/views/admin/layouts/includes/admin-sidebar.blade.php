@@ -39,9 +39,9 @@
                     User
                 </a>
 
-                <a class="nav-link {{ Request::is('admin/user') ? 'active':'' }}" href="tables.html">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Tables
+                <a class="nav-link {{ Request::is('admin/user') ? 'active':'' }}" href="{{ url('admin/settings') }}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+                    Settings
                 </a>
             </div>
         </div>

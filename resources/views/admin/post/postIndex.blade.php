@@ -51,11 +51,11 @@
                             <caption class="text-center" style="font-size: 25px;">List of Post</caption>
                             <thead class="table-info align-middle">
                                 <tr>
-                                    <th style="width: 5%;">SL</th>
-                                    <th style="width: 20%;">Category</th>
-                                    <th style="width: 20%;">Post Name</th>
-                                    <th style="width: 20%;">Status</th>
-                                    <th style="width: 20%;">Action</th>
+                                    <th style="width: 5%; text-align: center;">SL</th>
+                                    <th style="width: 20%; text-align: center;">Category</th>
+                                    <th style="width: 20%; text-align: center;">Post Name</th>
+                                    <th style="width: 20%; text-align: center;">Status</th>
+                                    <th style="width: 20%; text-align: center;">Action</th>
                                 </tr>
                             </thead>
                             <tbody class="table-group-divider" id="table">

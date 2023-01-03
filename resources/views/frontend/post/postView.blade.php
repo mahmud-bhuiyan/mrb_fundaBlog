@@ -58,7 +58,7 @@
                             </div>
                             @if (Auth::check() && Auth::id() == $item->user_id)
                                 <div>
-                                    <a href="" class="btn btn-primary btn-sm me-2">Edit</a>
+                                    {{-- <a href="" class="btn btn-primary btn-sm me-2">Edit</a> --}}
 
                                     <button class="delete_comment btn btn-danger btn-sm me-2" type="button"
                                         value="{{ $item->id }}">Delete</button>
